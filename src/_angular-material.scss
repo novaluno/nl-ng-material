@@ -1,0 +1,156 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// **Be sure that you only ever include this mixin once!**
+@include mat-core();
+
+$mat-searchpoint-orange: (
+    50 : #ffece0,
+    100 : #ffd1b3,
+    200 : #ffb280,
+    300 : #ff934d,
+    400 : #ff7b26,
+    500 : #ff6400,
+    600 : #ff5c00,
+    700 : #ff5200,
+    800 : #ff4800,
+    900 : #ff3600,
+    A100 : #ffffff,
+    A200 : #fff4f2,
+    A400 : #ffc9bf,
+    A700 : #ffb3a6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-enlight-purple: (
+    50 : #e8e6f1,
+    100 : #c6c0dc,
+    200 : #a096c4,
+    300 : #7a6bac,
+    400 : #5e4c9b,
+    500 : #412c89,
+    600 : #3b2781,
+    700 : #322176,
+    800 : #2a1b6c,
+    900 : #1c1059,
+    A100 : #a090ff,
+    A200 : #745dff,
+    A400 : #472aff,
+    A700 : #3111ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$mat-common-blue: (
+    50 : #f0f4f9,
+    100 : #d9e5f0,
+    200 : #c0d3e7,
+    300 : #a7c1dd,
+    400 : #94b4d5,
+    500 : #81a7ce,
+    600 : #799fc9,
+    700 : #6e96c2,
+    800 : #648cbc,
+    900 : #517cb0,
+    A100 : #ffffff,
+    A200 : #deecff,
+    A400 : #abd0ff,
+    A700 : #91c1ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+// Define the theme.
+$searchpoint-app-primary: mat-palette($mat-searchpoint-orange);
+$searchpoint-app-accent:  mat-palette($mat-common-blue);
+$theme:   mat-light-theme($searchpoint-app-primary, $searchpoint-app-accent);
+
+// Include the theme styles for only specified components.
+@include mat-core-theme($theme);
+@include mat-checkbox-theme($theme);
+@include mat-radio-theme($theme);
+@include mat-tabs-theme($theme);
+
+// Create a theme.
+// @include mat-core-theme($theme);
+// @include mat-autocomplete-theme($theme);
+// @include mat-badge-theme($theme);
+// @include mat-bottom-sheet-theme($theme);
+// @include mat-button-theme($theme);
+// @include mat-button-toggle-theme($theme);
+// @include mat-card-theme($theme);
+// @include mat-checkbox-theme($theme);
+// @include mat-chips-theme($theme);
+// @include mat-table-theme($theme);
+// @include mat-datepicker-theme($theme);
+// @include mat-dialog-theme($theme);
+// @include mat-divider-theme($theme);
+// @include mat-expansion-panel-theme($theme);
+// @include mat-form-field-theme($theme);
+// @include mat-grid-list-theme($theme);
+// @include mat-icon-theme($theme);
+// @include mat-input-theme($theme);
+// @include mat-list-theme($theme);
+// @include mat-menu-theme($theme);
+// @include mat-paginator-theme($theme);
+// @include mat-progress-bar-theme($theme);
+// @include mat-progress-spinner-theme($theme);
+// @include mat-radio-theme($theme);
+// @include mat-select-theme($theme);
+// @include mat-sidenav-theme($theme);
+// @include mat-slide-toggle-theme($theme);
+// @include mat-slider-theme($theme);
+// @include mat-stepper-theme($theme);
+// @include mat-sort-theme($theme);
+// @include mat-tabs-theme($theme);
+// @include mat-toolbar-theme($theme);
+// @include mat-tooltip-theme($theme);
+// @include mat-tree-theme($theme);
+// @include mat-snack-bar-theme($theme);
+
+

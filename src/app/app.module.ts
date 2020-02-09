@@ -15,6 +15,9 @@ import { ComponentsModule } from './components/components.module';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +34,8 @@ import { AboutComponent } from './about/about.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatTabsModule,
+    MatButtonModule,
     ServicesModule.forRoot(),
     ComponentsModule.forRoot(),
     AppRoutingModule

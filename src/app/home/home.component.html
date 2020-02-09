@@ -1,1 +1,26 @@
 <h1>There's No Place Like Home</h1>
+
+<!-- <nav mat-tab-nav-bar [backgroundColor]="background">
+    <a mat-tab-link (click)="activeLink">NET MERIT</a>
+    <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink == link"> {{link}}
+        REPORT NAME </a>
+    <a mat-tab-link>CUSTOMIZE COLUMNS SHOWN</a>
+</nav>
+
+<button mat-raised-button class="example-action-button" (click)="toggleBackground()">
+    Toggle background
+</button>
+<button mat-raised-button class="example-action-button" (click)="addLink()">
+    Add link
+</button> -->
+
+<mat-tab-group [selectedIndex]="selected.value" (selectedIndexChange)="selected.setValue($event)">
+    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+        Contents for {{tab}} tab
+
+        <!-- <button mat-raised-button class="example-delete-tab-button" [disabled]="tabs.length === 1"
+            (click)="removeTab(index)">
+            Delete Tab
+        </button> -->
+    </mat-tab>
+</mat-tab-group>
