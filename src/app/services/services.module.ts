@@ -23,7 +23,7 @@ export class ServicesModule {
     }
   }
 
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<ServicesModule> {
     return {
       ngModule: ServicesModule,
       providers: [
