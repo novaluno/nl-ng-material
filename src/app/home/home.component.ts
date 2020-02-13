@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatTabChangeEvent } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +13,24 @@ export class HomeComponent implements OnInit {
   // activeLink = this.links[0];
   // background = '';
   tabs = ['First', 'Second', 'Third'];
-  selected = new FormControl(0);
+  public selectedTabIndex: number;
+  public selectedTabName: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.setSelectedTab(0);
+  }
+
+  tabChanged(index: number) {
+    this.setSelectedTab(index);
+  }
+
+  public setSelectedTab(index: number) {
+    this.selectedTabIndex = index;
+    console.log('Selected Tab Index: ' + this.selectedTabIndex);
+    this.selectedTabName = this.tabs[index];
+    console.log('Selected Tab Name: ' + this.selectedTabName);
   }
 
   // toggleBackground() {
