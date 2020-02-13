@@ -30,26 +30,36 @@ h1, h2, h3, h4, h5 {
 }
 
 div.mat-tab-label {
-    height: 30px;
-    padding: .2rem;
+    height: 35px;
+    padding: 0 .3rem;
     cursor: pointer;
     box-sizing: border-box;
     opacity: .6;
-    min-width: 40px;
+    min-width: 70px;
     text-align: center;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
     position: relative;
+    border-bottom: 3px solid #747474;
+    margin: 0 2px;
 }
 
 div.mat-tab-label, .mat-tab-link {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-size: .8rem;
+    font-family: Proxima Extra Regular, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .mat-tab-group.mat-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled) {
     background-color: #DDDDDD;
+}
+
+.mat-tab-nav-bar, .mat-tab-header {
+    border-bottom: none;
+}
+
+span.mat-tab-item {
+    text-transform: uppercase;
 }
